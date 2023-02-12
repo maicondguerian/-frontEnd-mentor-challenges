@@ -1,0 +1,38 @@
+.container{
+    background-color: #D5E1EF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color:hsl(0, 0%, 100%);
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.title{
+    width: 280px;
+    word-wrap: break-word;
+    color:  hsl(218, 44%, 22%);
+    font-weight: 700;
+
+}
+.description{
+    text-align: center;
+    color: hsl(210, 2%, 34%);
+    font-weight:initial;
+   
+}
+

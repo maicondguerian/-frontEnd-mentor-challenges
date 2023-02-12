@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import thanks from './interative-rating-component/assets/illustration-thank-you.svg'
+import InterativeRating from './interative-rating-component/Components/InterativeRating';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <BannerHqCode/> */}
+      <InterativeRating/>
+
     </div>
   );
 }
