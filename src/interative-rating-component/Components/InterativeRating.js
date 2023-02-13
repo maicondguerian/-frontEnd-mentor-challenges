@@ -14,9 +14,8 @@ export default function InterativeRating() {
         }, 2000)
     }
 
-
+    
     const handleClick = (e) => {
-
         setRating(e.target.value)
     }
 
@@ -24,9 +23,9 @@ export default function InterativeRating() {
 
     if (submit === true) {
         return (
-
             <>
-                <Thankyou rating={rating} /> 
+                <Thankyou rating={rating}
+                isSubmit={isSubmit}/> 
             </>
         )
 
@@ -40,7 +39,10 @@ export default function InterativeRating() {
                         <img src={star} alt="star" className={style.star} />
                     </div>
                     <h1 className={style.title}>How did we do?</h1>
-                    <p className={style.description}>Please let us know how we did with your support request. All feedback is appreciated to help us improve uor offering!</p>
+                    <p className={style.description}>
+                        Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve uor offering!
+                    </p>
                     <div className={style.buttonsGroup} >
                         {numbers.map((number, index) => (
                             <button onClick={e => setRating(e.target.value)} className={style.ratingButtons} value={number} type="">{number}</button>
